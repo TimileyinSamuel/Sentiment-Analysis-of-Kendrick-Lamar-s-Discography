@@ -4,6 +4,7 @@
 
 
 I. Introduction
+
 During a casual internet browsing session in 2015, I came across an article discussing the provocative aspects of one of Kendrick Lamar’s tracks, “The Blacker The Berry,” from his critically acclaimed album, “To Pimp a Butterfly.” Intrigued by the thought-provoking analysis of the song, I decided to give it a listen. Lamar’s impassioned delivery, the powerful subject matter, and the intricate depth of the lyrics instantly captivated me. This profound experience left an indelible impression and ignited a desire to explore Lamar’s discography further.
 
 After immersing myself in his music, I became convinced that “To Pimp a Butterfly” was Lamar’s magnum opus, and he quickly ascended to become one of my all-time favorite artists. As I delved deeper into his work, I was struck by the emotional intensity of his music and its profound impact on me. Lamar’s unique fusion of conscious rap, jazz, and funk elements resonated deeply, and I knew that if I were to conduct a study on any musician, it would be an analysis of Kendrick Lamar’s music.
@@ -11,15 +12,17 @@ After immersing myself in his music, I became convinced that “To Pimp a Butter
 With this goal in mind, I embark on a text analysis project to examine Lamar’s lyrics from his debut studio album, “Section.80,” released in 2011, to his latest release, “Mr. Morale & The Big Steppers,” in 2022. Driven by curiosity, I sought to explore the dominant themes in his music, trace the evolution of his lyrical content over time, and discern the emotional nuances conveyed throughout his albums.
 
 II. Data
+
 To assemble the necessary data for my analysis, I leveraged the Spotify API to acquire information about Kendrick Lamar’s albums. Additionally, I employed the Genius Lyrics API to extract the lyrics for each album. Genius Lyrics proved to be an indispensable resource, as it stands as one of the most popular platforms for music lyrics.
 
 To focus exclusively on Kendrick Lamar’s studio albums for my analysis, I filtered out certain projects. For example, I excluded the “Black Panther” album, a collaborative effort between Kendrick and various artists, created specifically for the “Black Panther” movie. Furthermore, I dismissed the “DAMN. COLLECTORS EDITION” album, as it simply rearranges the tracks from the original “DAMN.” album. Kendrick intended the original “DAMN.” album to be experienced in reverse order, beginning with the last track, and the collector’s edition was merely a version with the tracks reordered accordingly.
 
 Additionally, I eliminated the mixtape album “Overly Dedicated” and the compilation album “untitled unmastered.” Ultimately, I opted for the deluxe version of “good kid, m.A.A.d city,” which features all the original tracks plus several additional ones, over the original version. After filtering, I was left with a total of five albums for my analysis: “Section.80,” “good kid, m.A.A.d city (Deluxe),” “To Pimp A Butterfly,” “DAMN.,” and “Mr. Morale & The Big Steppers,” organized in chronological order of release.
 
-The code for this project can be found here.
+
 
 III. Analysis
+
 To commence my analysis, I first explored the data provided by Spotify’s API, which offers a variety of track attributes, such as valence, liveness, speechiness, and instrumentalness, among others. In my investigation, I chose to concentrate primarily on valence, as it is the most pertinent attribute for my analysis of Kendrick Lamar’s music. While other attributes like danceability, instrumentalness, or liveness might be valuable for different genres, I deemed them less relevant for examining rap music.
 
 a) Valence
@@ -49,6 +52,7 @@ Upon further examination, it is fascinating to observe that six out of the top t
 
 It is important to recognize that valence is not necessarily an ideal indicator of a track’s emotional impact. For instance, “Keisha’s Song (Her Pain),” which narrates the tragic real-life story of one of Kendrick’s female friends, is not assigned an exceptionally low valence by Spotify. Yet, upon listening to the track, one cannot help but be touched by its raw emotional intensity. Such examples remind us that while valence can offer a useful metric for assessing a song’s overall emotional tone, it should not be regarded as the sole determinant of a track’s emotional impact.
 
+
 Top 10 tracks with highest valence
 
 
@@ -59,6 +63,7 @@ Another intriguing finding from my analysis is that “The Heart Part 5,” a tr
 
 Additionally, it is noteworthy that four out of the top ten songs with the highest valence are from the “Mr. Morale & The Big Steppers” album. While this is a subjective assessment and opinions may differ, I personally do not entirely concur with this conclusion. It is worth noting, however, that Spotify does not explicitly disclose the exact method it employs to determine a song’s valence.
 
+
 b) Word Count
 
 Word count is a crucial aspect of rap music, and a comprehensive analysis of word count in Kendrick Lamar’s discography reveals intriguing patterns and trends. Among his albums, “good kid, m.A.A.d city (Deluxe)” boasts the highest total word count, while his debut album, “Section.80,” has the lowest. This is unsurprising, as “good kid, m.A.A.d city (Deluxe)” is a storytelling album featuring long narratives and intricate lyricism.
@@ -67,6 +72,7 @@ Word count is a crucial aspect of rap music, and a comprehensive analysis of wor
 ![image](https://github.com/TimileyinSamuel/Sentiment-Analysis-of-Kendrick-Lamar-s-Discography/assets/119361599/75fa08a2-297c-4b78-ba95-8862cae94799)
 
 Tracks such as “Sing About Me, I’m Dying of Thirst” and “Real” exemplify Kendrick’s remarkable lyricism and captivating storytelling skills. With a total runtime exceeding 95 minutes and an average track length of 5 minutes, “good kid, m.A.A.d city (Deluxe)” stands as the longest of Kendrick’s albums. Close contenders in terms of duration include “To Pimp A Butterfly” and “Mr. Morale & The Big Steppers,” both spanning 78 minutes. Interestingly, Kendrick’s albums have generally seen a rise in word count since his debut studio album, “Section.80,” with the notable exception of his Pulitzer Prize-winning 2017 album, “DAMN.”
+
 
 Top 10 Songs by Word Count
 
@@ -82,6 +88,7 @@ Analyzing the frequency of individual words in Kendrick’s music can reveal cru
 ![image](https://github.com/TimileyinSamuel/Sentiment-Analysis-of-Kendrick-Lamar-s-Discography/assets/119361599/4c95eb9d-e890-432a-b7dd-1eb5f4b08e69)
 
 Across his albums, the “n-word” emerges as the most frequently used, reflecting its prevalence in rap music. Other common words include expletives such as “fuck” and “bitch,” influenced by tracks like “We Cry Together” and “Bitch, Don’t Kill My Vibe.” Kendrick frequently uses words like “live,” “die,” “dead,” “living,” “hate,” “deep,” “kill,” “love,” “life,” “money,” “pain,” “truth,” “loyalty,” “feel,” “feelings,” “world,” and “homie,” reflecting the themes and stories conveyed in his music. Interestingly, “Compton,” Kendrick’s hometown, ranks among his most-used words, underscoring his strong connection to the city. A word cloud was generated for each album, illustrating the most common words and providing a visual representation of the recurring themes and motifs in Kendrick Lamar’s music.
+
 
 Word Cloud for Each Album
 
@@ -107,6 +114,7 @@ Upon comparing the word clouds of Kendrick Lamar’s first studio album, Section
 
 A careful examination of the word clouds for “Section 80” and “Mr. Morale & The Big Steppers” reveals that many words, such as life, live, die, God, love, and black, are persistently present in both albums. Despite the varying themes and subject matter of each album, Kendrick’s approach to storytelling has remained relatively consistent. His exploration of societal issues and personal experiences is conveyed through a stable and expressive linguistic style that has not undergone significant changes over the years.
 
+
 c) Lexical Diversity
 
 Lexical diversity and lexical density are linguistic features that can be used to analyze text. Higher vocabulary variation results in greater lexical diversity. Song Vocabulary measures the number of unique words used in a song and counts the number of distinct words in an album. In this analysis, I tokenized the original dataset again, including all stop and short words, as I aimed to gain more quantitative insights from this plot.
@@ -118,6 +126,7 @@ Lexical diversity and lexical density are linguistic features that can be used t
 
 The analysis indicates that “good kid, m.A.A.d city (deluxe)” boasts the highest number of distinct words, followed by “Mr. Morale & The Big Steppers” and “To Pimp a Butterfly.” However, lexical diversity only considers the absolute number of distinct words in a text. To better comprehend the relationship between the number of distinct words and the total number of words, we can use lexical density as a measure of the proportion of lexical items.
 
+
 d) Lexical Density
 
 Lexical density is the ratio of unique words to the total number of words in a text. Token-type ratios are often employed to calculate lexical diversity and density, taking the number of unique words (types) and dividing it by the total number of words (tokens) in the text.
@@ -127,6 +136,7 @@ Lexical density is the ratio of unique words to the total number of words in a t
 
 “Good Kid, M.A.A.D City (Deluxe)” has the highest lexical diversity, while “DAMN” exhibits the highest lexical density. It is interesting to note that albums with lower total word counts tend to have higher lexical density. This is logical, as a higher proportion of unique words in a smaller text will likely result in a higher lexical density.
 
+
 Most Lexically Dense Songs
 
 
@@ -134,12 +144,14 @@ Most Lexically Dense Songs
 
 The song “DUCKWORTH” stands out for its high lexical density. Although the track “BLOOD.” has the highest lexical density, it is a 1-minute, 59-second track that opens his 2017 “DAMN” album. Four out of ten tracks are from “DAMN.” Chapter ten is also shorter than 90 seconds. “Rich Interlude” is under 2 minutes, as is the fifth song. This makes sense because an artist is less likely to repeat phrases in shorter songs. The songs that dominate here are generally shorter in duration.
 
+
 Least Lexically Dense Songs
 
 ![image](https://github.com/TimileyinSamuel/Sentiment-Analysis-of-Kendrick-Lamar-s-Discography/assets/119361599/c8b9d616-85ae-459e-91b3-9a4780d0affc)
 
 
 “Crown,” a track from the album “Mr. Morale & The Big Steppers,” takes the lead in the least lexically dense songs. Kendrick frequently repeats the statement “I can’t please everybody” throughout the chorus, verses, and outro, emphasizing his conflicting emotions about being a community leader, doing his best, and inevitably failing to satisfy everyone.
+
 
 e) Sentiment Analysis
 
@@ -149,6 +161,7 @@ To determine the most suitable lexicon for analyzing Kendrick Lamar’s lyrics, 
 
 To ensure the accuracy of the sentiment analysis, I removed all stop words and unwanted words, such as sounds, from the lyrics. By doing so, I was able to delve into the emotional tones and attitudes expressed in Kendrick Lamar’s lyrics.
 
+
 Sentiment Ranking Based on AFINN Lexicon
 
 ![image](https://github.com/TimileyinSamuel/Sentiment-Analysis-of-Kendrick-Lamar-s-Discography/assets/119361599/db26ae2d-6f1f-42a2-992d-4988e458fee3)
@@ -156,6 +169,7 @@ Sentiment Ranking Based on AFINN Lexicon
 Despite the inspiring and powerful messages often conveyed in Kendrick Lamar’s music, his lyrics tend to have a negative sentiment. This is evident not only in the words he uses, but also in the titles of his songs, which often explore challenging and difficult aspects of life, such as “Mother, I’m Sober,” “Sing About Me, I’m Dying of Thirst,” and “We Cry Together.”
 
 After analyzing Kendrick’s albums using various sentiment lexicons, it was found that all his albums have a predominantly negative sentiment. Specifically, albums like “good kid m.A.A.d city (deluxe)” and “Mr. Morale & The Big Steppers” had the highest negative sentiment scores, followed by “Section.80,” “To Pimp A Butterfly,” and “DAMN,” which had the lowest negative sentiment score.
+
 
 Examining Overall Mood of Kendrick’s Lyrics Using NRC Lexicon
 
@@ -179,6 +193,7 @@ To gain further insight into the overall mood of Kendrick Lamar’s lyrics, I us
 
 However, it’s important to note that the negative sentiment score may have been inflated due to the inclusion of words like “fuck,” “kill,” and “bitch,” which are classified as negative in the Bing lexicon. These words appear frequently in some of Kendrick’s songs, such as “We Cry Together” and “Bitch, Don’t Kill My Vibe,” which could have contributed to the higher number of negative sentiments found in the analysis.
 
+
 Album by Album Sentiment Analysis Using the Bing Lexicon
 
 ![image](https://github.com/TimileyinSamuel/Sentiment-Analysis-of-Kendrick-Lamar-s-Discography/assets/119361599/8c917bb9-ea82-4085-8309-3ff810680bdf)
@@ -187,6 +202,7 @@ Album by Album Sentiment Analysis Using the Bing Lexicon
 The sentiment analysis using the Bing lexicon revealed similar results to the AFINN lexicon, indicating that Kendrick Lamar’s albums generally contain more negative sentiments than positive ones. Specifically, “good kid, m.A.A.d City (Deluxe),” “Mr. Morale & The Big Steppers,” and “To Pimp a Butterfly” were found to be the most negative of all his albums.
 
 To further explore the sentiment analysis, I decided to identify the tracks with the highest positive and negative sentiments, using the Bing lexicon.
+
 
 Top 10 most-negative tracks using Bing Lexicon
 
